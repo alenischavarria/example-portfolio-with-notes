@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FFCDB2;
+    background-color: #FFCDB2;/* if you want to change the background color, change the background-color: */
     font-family: 'Montserrat', sans-serif;
+    /*To change to font, change the font-family.*/
 }
 
 h2{
     color: #6D6875;
+    /* if you want to change the color of Your Name,
+     change the color: */
 }
 
 h4{
     color:#B5838D;
+    /* if you want to change the color of Projects, Contact Me, and Your Resume,
+     change the color: */
 }
 
 .nav-link:hover{
@@ -22,6 +27,11 @@ h4{
 
 .custom-navbar{
     background-color: transparent;
+     /* background-color is to change the color of the navbar.
+    navbar is where Your Name and the other buttons appear.
+    Right now it is set to transparent, which means there is no color.
+    Since the background color of the body is set, the navbar appears 
+    to have that color as well.*/
     align-items: center;
     justify-content: start;
 }
@@ -40,23 +50,31 @@ h4{
     gap: 20px;
 }
 
+/*.contact-left-title h2 is in charge of
+'Get in Touch'. */
 .contact-left-title h2{
     font-weight: 600;
     color: #B5838D;
+    /*to change the color of the text, change this ^*/
     font-size: 40px;
     margin-bottom: 5px;
 }
 
+/*.contact-left-title hr is in charge of
+the line that is underneath 'Get in Touch'*/
 .contact-left-title hr{
     border: none;
     width: 120px;
     height: 5px;
     background-color: #B5838D;
+    /*to change the color of the line, change this ^*/
     border-radius: 10px;
     margin-bottom: 20px;
 
 }
 
+/*to change the colors of your responses to
+'Your Email, Your Name, Your Message'*/
 .contact-inputs{
     width: 400px;
     height: 50px;
@@ -64,7 +82,7 @@ h4{
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    color: #E5989B;
+    color: #E5989B; /*change this*/
     border-radius: 50px;
 }
 
@@ -74,48 +92,73 @@ h4{
     border-radius: 20px;
 }
 
+/*after you press an input to type, the border of the input field
+is boldened. To change the color of the 'active' or 'selected'
+border, */
 .contact-inputs:focus{
-    border: 2px solid #6D6875;
+    border: 2px solid #6D6875; /*change this hex color*/
 }
 
+/*to change the colors of 'Your Email, Your Name, Your Message'*/
 .contact-inputs::placeholder{
-    color:#B5838D
+    color:#B5838D /*change this*/
 }
 
+/*.contact-left button is in charge of the button in the 
+web form that says 'Submit'*/
 .contact-left button{
     display: flex;
     align-items: center;
     padding: 15px 30px;
     font-size: 16px;
     color: #FFF;
+    /*to change the font color, change this ^*/
     gap:10px;
     border: none;
     border-radius: 50px;
     background: linear-gradient(270deg, #E5989B,#FFB4A2);
+    /*to change the color of the button, change this ^.
+    You can remove linear-gradient and enter a hex color.
+    You can also simply replace the current hex colors with
+    hex colors of your choice.*/
     cursor:pointer;
 }
 
 .bi-github{
     font-size: 25pt;
-    color: #FFF;
+    color: #FFF; /*This is to change the color of the Github Logo*/
     text-shadow: 3px 2px 1px #E5989B;
+    /*The first two values are for the angle of the shadow.
+    The first value deals across the x-axis and the second
+    deals across the y-axis. The third value deals with
+    how far the shadow should extend. The last value is for 
+    the color of the shadow.*/
+    /* Text-shadow is to change the color of the shadow, 
+    the angle of the shadow, and how far the shadow should extend. */
 }
 .bi-linkedin{
     font-size: 25pt;
-    color: #FFF;
+    color: #FFF; /*This is to change the color of the Github Logo*/
     text-shadow: 3px 2px 1px #E5989B;
+    /*The first two values are for the angle of the shadow.
+    The first value deals across the x-axis and the second
+    deals across the y-axis. The third value deals with
+    how far the shadow should extend. The last value is for 
+    the color of the shadow.*/
+    /* Text-shadow is to change the color of the shadow, 
+    the angle of the shadow, and how far the shadow should extend. */
 }
 
 .twobuttons{
     display: flex;
     margin-left: 200px;
-    gap: 20px;
+    gap: 20px; /*This separates the Projects and Contact Me button*/
     margin-right: 300px;
 }
 
 
 #icons{
     display: flex;
-    gap: 25px;
+    gap: 25px; /*This separates the Github Logo and the LinkedIn Logo*/
     margin-right: 5rem;
 }
