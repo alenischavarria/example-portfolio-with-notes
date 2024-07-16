@@ -9,3 +9,5 @@
     - Any changes you make to a specific CSS file have to be manually applied to other CSS files. 
     - Any changes you make to a specific HTML file have to be manually applied to other HTML files. 
     - Read all comments that appear in HTML and CSS files.
+    - Add images inside of images folder.
+    - Add resume inside of code folder.
