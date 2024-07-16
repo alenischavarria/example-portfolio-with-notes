@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* if you want to change the background color, change the background-color: */
+    background-color: #FFCDB2;
+    /*To change to font, change the font-family.*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    color: #6D6875;
+    /* if you want to change the color of Your Name and Hero Text Heading,
+     change the color: */
+}
+
+h4{
+    color:#B5838D;
+    /* if you want to change the color of Projects, Contact Me, and Your Resume,
+     change the color: */
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.custom-navbar{
+    background-color: transparent;
+    /* background-color is to change the color of the navbar.
+    navbar is where Your Name and the other buttons appear.
+    Right now it is set to transparent, which means there is no color.
+    Since the background color of the body is set, the navbar appears 
+    to have that color as well.*/
+    align-items: center;
+    justify-content: start;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /*This establishes the space between each card.*/
+}
+
+/*.text-bg-custom is in charge of the badge that displays
+the programming language name */
+.text-bg-custom{
+    background-color: #E5989B;
+    /*To change the color of the button, modify this ^*/
+    color: #FFF;
+    /*To change the color of the text, modify this ^*/
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 25px; /*This rounds the corners of each card*/
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-img{
+    /* To change the dimensions of the image inside the card, 
+    modify the width and height properties. */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    transition: .4s;
+}
+
+.card-body a{
+    /* This removes the line that usually appears underneath links */
+    text-decoration: none;
+}
+
+/*.card-btn is in charge of the button
+that has the link to go to the Github repo*/
+.card-btn{
+    background-color:#B5838D;
+    /*To change the color of the button, modify this ^*/
+    color: #FFF;
+    /*To change the color of the text, modify this ^*/
+    padding: 10px 20px;
+    border-radius: 25px;
+    /*To change the rounded corners of the button, modify this ^*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bi-github{
+    font-size: 25pt;
+    color: #FFF; /*This is to change the color of the Github Logo*/
+    text-shadow: 3px 2px 1px #E5989B;
+    /*The first two values are for the angle of the shadow.
+    The first value deals across the x-axis and the second
+    deals across the y-axis. The third value deals with
+    how far the shadow should extend. The last value is for 
+    the color of the shadow.*/
+    /* Text-shadow is to change the color of the shadow, 
+    the angle of the shadow, and how far the shadow should extend. */
+}
+.bi-linkedin{
+    font-size: 25pt;
+    color: #FFF; /*This is to change the color of the LinkedIn Logo*/
+    text-shadow: 3px 2px 1px #E5989B;
+    /*The first two values are for the angle of the shadow.
+    The first value deals across the x-axis and the second
+    deals across the y-axis. The third value deals with
+    how far the shadow should extend. The last value is for 
+    the color of the shadow.*/
+    /* Text-shadow is to change the color of the shadow, 
+    the angle of the shadow, and how far the shadow should extend. */
+}
+
+.twobuttons{
+    display: flex;
+    margin-left: 200px;
+    gap: 20px; /*This separates the Projects and Contact Me button*/
+    margin-right: 300px;
+}
+
+
+#icons{
+    display: flex;
+    gap: 25px; /*This separates the Github Logo and the LinkedIn Logo*/
+    margin-right: 5rem;
+}

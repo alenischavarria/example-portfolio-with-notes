@@ -1,0 +1,112 @@
+body{
+    background-color: #FFCDB2; /* if you want to change the background color, change the background-color: */
+    font-family: 'Montserrat', sans-serif; 
+    /*To change to font, change the font-family.*/
+    
+}
+
+h2{
+    color: #6D6875; 
+    /* if you want to change the color of Your Name and Hero Text Heading,
+     change the color: */
+}
+
+h4{
+    color:#B5838D; 
+    /* if you want to change the color of Projects, Contact Me, and Your Resume,
+     change the color: */
+}
+
+h5{
+    color: #FFF;
+    /* if you want to change the color of Hero Text Subheading, 
+    change the color: */
+}
+
+img{
+    width: 100px;
+    height: 500px;
+    margin-left: 250px;
+    border-radius: 50px;
+}
+
+.img-container{
+    width: 700px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.img-container img{
+    /* To change the dimensions of the image, modify the
+    width and height properties. */
+    width: 400px;
+    height: 500px;
+    object-fit:cover;
+}
+
+.col h5{
+    padding-top: 10px;
+}
+
+.bi-github{
+    font-size: 25pt;
+    color: #FFF; /*This is to change the color of the Github Logo*/
+    text-shadow: 3px 2px 1px #E5989B;
+    /*The first two values are for the angle of the shadow.
+    The first value deals across the x-axis and the second
+    deals across the y-axis. The third value deals with
+    how far the shadow should extend. The last value is for 
+    the color of the shadow.*/
+    /* Text-shadow is to change the color of the shadow, 
+    the angle of the shadow, and how far the shadow should extend. */
+}
+.bi-linkedin{
+    font-size: 25pt;
+    color: #FFF; /*This is to change the color of the LinkedIn Logo*/
+    text-shadow: 3px 2px 1px #E5989B;
+    /*The first two values are for the angle of the shadow.
+    The first value deals across the x-axis and the second
+    deals across the y-axis. The third value deals with
+    how far the shadow should extend. The last value is for 
+    the color of the shadow.*/
+    /* Text-shadow is to change the color of the shadow, 
+    the angle of the shadow, and how far the shadow should extend. */
+}
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 300px;
+    padding-top: 50px;
+
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.custom-navbar{
+    background-color: transparent;
+    /* background-color is to change the color of the navbar.
+    navbar is where Your Name and the other buttons appear.
+    Right now it is set to transparent, which means there is no color.
+    Since the background color of the body is set, the navbar appears 
+    to have that color as well.*/
+    align-items: center;
+    justify-content: start;
+}
+
+.twobuttons{
+    display: flex;
+    margin-left: 200px;
+    gap: 20px; /*This separates the Projects and Contact Me button*/
+    margin-right: 300px;
+}
+
+
+#icons{
+    display: flex;
+    gap: 25px; /*This separates the Github Logo and the LinkedIn Logo*/
+    margin-right: 5rem;
+}
